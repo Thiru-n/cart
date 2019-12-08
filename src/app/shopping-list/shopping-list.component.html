@@ -1,0 +1,11 @@
+<div>
+    <app-sort></app-sort>
+    <app-filter></app-filter>
+    <div *ngFor="let item of shoppingList | async">
+        <span>{{ item.name }}</span>
+        <span>{{ item.price | currency }}</span>
+        <button (click)="addToCart(item)">
+            Add to cart
+        </button>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+<div>
+    <div>
+        <a [routerLink]="['/']">
+            Icon
+        </a>
+    </div>
+    <app-search></app-search>
+    <div>
+        <a [routerLink]="['/cart']">
+            Cart({{cartService.getCartCount()}})
+        </a>
+    </div>
+</div>

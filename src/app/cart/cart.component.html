@@ -1,0 +1,10 @@
+<div class="container">
+    <div>Cart Page</div>
+    <div *ngFor="let item of items; index as itemIndex">
+        <p>{{item.name}}</p>
+        <p>{{item.price | currency}}</p>
+        <button (click)="remove(itemIndex)">
+                Remove
+        </button>
+    </div>
+</div>
