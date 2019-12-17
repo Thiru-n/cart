@@ -1,53 +1,16 @@
-<!--<header>
-    <a [routerLink]="['/']">
-            Icon
-    </a>
-    <app-search></app-search>
-    <a [routerLink]="['/cart']" class="cart">
-        <i class="fa fa-shopping-cart"></i>
-        Cart({{cartService.getCartCount()}})
-    </a>
-</header>
-<div class="main">
-        <header>
-                <nav>
-                    <a href="#" [routerLink]="['/']">  <i class="star"></i> </a>
-                </nav>
-                <app-search></app-search>
-                <a [routerLink]="['/cart']" id="cart">
-                    <i class="fas fa-shopping-cart"></i>
-                    Cart({{cartService.getCartCount()}})
-                </a>
-        </header>
-</div>-->
-
-     <nav class="container-fluid">
+<nav class="container-fluid">
         <div>
           <ul class="navbar-left">
             <li><a [routerLink]="['/']" href="#about"> <i class="star"></i></a></li>
-          </ul> <!--end navbar-left -->
+          </ul> 
           <form class="search-container">
             <input type="text" id="search-bar" placeholder="Search here...">
             <a href="#"><img class="search-icon" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"></a>
           </form>
           <ul class="navbar-right">
             <li><a class="cart-position" href="#" [routerLink]="['/cart']" id="cart"><i class="fa fa-shopping-cart"></i> <span class="badge">Cart{{cartService.getCartCount()}}</span></a></li>
-          </ul> <!--end navbar-right -->
-        </div> <!--end container -->
-      </nav>
+          </ul> 
+        </div> 
+</nav>
 
-
-<!--<div>
-    <div>
-        <a [routerLink]="['/']">
-            Icon
-        </a>
-    </div>
-    <app-search></app-search>
-    <div>
-        <a [routerLink]="['/cart']">
-            Cart({{cartService.getCartCount()}})
-        </a>
-    </div>
-</div>-->
 

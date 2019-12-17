@@ -244,4 +244,16 @@
   
   
   
-  
+  /* HEADER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+header {
+  width: 100%;
+  height: 4em;
+  display: flex;
+  position: fixed;
+  z-index: -1;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2874f0;
+  position:fixed;
+}
