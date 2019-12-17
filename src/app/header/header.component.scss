@@ -1,0 +1,247 @@
+ .main {
+     position: fixed;
+     z-index: 1;
+ }
+ header {
+    width: 100%;
+    height: 4em;
+    display: flex;
+    position: fixed;
+    z-index: -1;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2874f0;
+    position:fixed;
+  }
+  .lighter-text {
+    color: #fff;
+  }
+  
+  .main-color-text {
+    color: #6394F8;
+  }
+  
+  nav {
+    padding: 20px 0 20px 0;
+    background: #6394F8;
+    font-size: 16px;
+  }
+  nav .navbar-left {
+    float: left;
+  }
+  nav .navbar-right {
+    float: right;
+  }
+  nav ul li {
+    display: inline;
+    padding-left: 20px;
+  }
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  nav ul li a:hover {
+    color: black;
+  }
+  
+  .container {
+    margin: auto;
+    width: 80%;
+  }
+  
+  .badge {
+    background-color: #6394F8;
+    border-radius: 10px;
+    color: white;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 1;
+    padding: 3px 7px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+  
+  .shopping-cart {
+    margin: 20px 0;
+    float: right;
+    background: white;
+    width: 320px;
+    position: relative;
+    border-radius: 3px;
+    padding: 20px;
+    list-style: none;
+  }
+  .shopping-cart .shopping-cart-header {
+    border-bottom: 1px solid #E8E8E8;
+    padding-bottom: 15px;
+  }
+  .shopping-cart .shopping-cart-header .shopping-cart-total {
+    float: right;
+  }
+  .shopping-cart .shopping-cart-items {
+    padding-top: 20px;
+  }
+  .shopping-cart .shopping-cart-items li {
+    margin-bottom: 18px;
+  }
+  .shopping-cart .shopping-cart-items img {
+    float: left;
+    margin-right: 12px;
+  }
+  .shopping-cart .shopping-cart-items .item-name {
+    display: block;
+    padding-top: 10px;
+    font-size: 16px;
+  }
+  .shopping-cart .shopping-cart-items .item-price {
+    color: #6394F8;
+    margin-right: 8px;
+  }
+  .shopping-cart .shopping-cart-items .item-quantity {
+    color: #fff;
+  }
+  
+  .shopping-cart:after {
+    bottom: 100%;
+    left: 89%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-bottom-color: white;
+    border-width: 8px;
+    margin-left: -8px;
+  }
+  
+  .cart-icon {
+    color: #515783;
+    font-size: 24px;
+    margin-right: 7px;
+    float: left;
+  }
+  
+  .button {
+    background: #6394F8;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+    border-radius: 3px;
+    font-size: 16px;
+    margin: 25px 0 15px 0;
+  }
+  .button:hover {
+    background: #729ef9;
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .navbar-right {
+    position: relative;
+    right: 60px;
+  }
+
+  .cart-position {
+    position: relative;
+    top:15px;
+  }
+
+  //star
+
+  .star {
+    position: relative;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: .9em;
+    margin-right: .9em;
+    margin-bottom: 1.2em;
+    border-right:  .3em solid transparent;
+    border-bottom: .7em  solid #FC0;
+    border-left:   .3em solid transparent;
+  
+    /* Controlls the size of the stars. */
+    font-size: 24px;
+    
+    &:before, &:after {
+      content: '';
+      
+      display: block;
+      width: 0;
+      height: 0;
+      
+      position: absolute;
+      top: .6em;
+      left: -1em;
+    
+      border-right:  1em solid transparent;
+      border-bottom: .7em  solid #FC0;
+      border-left:   1em solid transparent;
+    
+      transform: rotate(-35deg);
+    }
+    
+    &:after {  
+      transform: rotate(35deg);
+    }
+  }
+
+  //search
+  .search-container{
+   // width: 490px;
+   // display: block;
+   // margin: 0 auto;
+   width: 50%;
+   display: inline-block;
+   position: relative;
+   left: 16%;
+   top: 5px;
+   height: 0;
+  }
+  
+  input#search-bar{
+    margin: 0 auto;
+    width: 100%;
+    height: 45px;
+    padding: 0 20px;
+    font-size: 14px;
+    border: 1px solid #D0CFCE;
+    outline: none;
+    &:focus{
+      border: 1px solid #008ABF;
+      transition: 0.35s ease;
+      color: #008ABF;
+      &::-webkit-input-placeholder{
+        transition: opacity 0.45s ease; 
+        opacity: 0;
+       }
+      &::-moz-placeholder {
+        transition: opacity 0.45s ease; 
+        opacity: 0;
+       }
+      &:-ms-placeholder {
+       transition: opacity 0.45s ease; 
+       opacity: 0;
+       }    
+     }
+   }
+  
+  .search-icon{
+    position: relative;
+    float: right;
+    width: 75px;
+    height: 75px;
+    top: -60px;
+    right: -10px;
+  }
+  
+  
+  
+  

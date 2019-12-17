@@ -1,0 +1,55 @@
+/* FOOTER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.page-footer {
+    display: flex;
+    flex-direction: column-reverse;
+    background: #6394F8;
+    color:#fff;
+    padding:10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .page-footer ul {
+    display: flex;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+  }
+  
+  .page-footer ul li:not(:last-child) {
+    margin-right: 20px;
+  }
+  
+  body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+}
+  /* FOOTER END
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* MQ
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media screen and (min-width: 550px) {
+    .page-header ul {
+      width: auto;
+      margin-top: 0;
+    }
+  
+    .page-header .cta-contact {
+      order: 1;
+    }
+
+    .page-footer {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .page-footer ul {
+      margin-bottom: 0;
+    }
+  }
+  
+  

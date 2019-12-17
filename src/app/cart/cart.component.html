@@ -1,4 +1,4 @@
-<div class="container">
+<!--<div class="container">
     <div>Cart Page</div>
     <div *ngFor="let item of items; index as itemIndex">
         <p>{{item.name}}</p>
@@ -7,4 +7,29 @@
                 Remove
         </button>
     </div>
-</div>
+</div>-->
+
+<div class="container">
+        <div class="shopping-cart">
+          <div class="shopping-cart-header">
+            <i class="fa fa-shopping-cart cart-icon"></i><span class="badge">1</span>
+            <div class="shopping-cart-total">
+              <span class="lighter-text">Total:</span>
+              <span class="main-color-text">$229.97</span>
+            </div>
+          </div> <!--end shopping-cart-header -->
+      
+          <ul class="shopping-cart-items" *ngFor="let item of items; index as itemIndex">
+            <li class="clearfix">
+              <img src="http://lorempixel.com/500/600/technics/" class="img-fluid chekoutImg">
+              <span class="item-name">{{item.name}}</span>
+              <span class="item-price">{{item.price | currency}}</span>
+              <span class="item-price text-success">{{item.discount}} off</span>
+              <span class="item-quantity"><i class="classPositive">+</i> 1 <i class="classNegetive">-</i></span>
+              <button class="float-right" (click)="remove(itemIndex)">Remove</button>
+            </li>
+          </ul>
+      
+          <a href="#" class="button">Checkout</a>
+        </div> <!--end shopping-cart -->
+      </div> <!--end container -->

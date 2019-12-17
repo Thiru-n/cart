@@ -23,4 +23,6 @@ export class ShoppingListComponent implements OnInit {
     console.log(item);
     this.cartService.addToCart(item);
   }
+ 
+
 }
